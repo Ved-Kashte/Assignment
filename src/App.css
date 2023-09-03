@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -35,4 +36,66 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* src/components/CommentList.css */
+
+.comment-list {
+  display: flex;
+}
+
+.left-side {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust as needed */
+  border: 5px solid #ccc;
+}
+
+.right-side {
+  flex: 2;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust as needed */
+  border: 5px solid #ccc;
+}
+
+.post {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.selected {
+  background-color: #f0f0f0;
+}
+
+.selected-post {
+  margin-bottom: 20px;
+}
+
+.comment {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 12px; /* Increase padding for better visual appearance */
+  width: 50%; /* Make the input box full width */
+  height: 40px; /* Increase the height */
+  margin-bottom: 20px;
+  border: 2px solid #030303;
+}
+
+.title {
+  flex: 2;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust as needed */
+  border: 10px solid #ccc;
+  background: black;
+  color: white;
 }
